@@ -1,0 +1,46 @@
+.history-panel {
+    width: 30vw;
+    height: 100vh;
+    background-color: rgb(190, 190, 190);
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-panel h1 {
+    margin: 16px;
+}
+
+.history-list {
+    flex: 1;
+    box-sizing: border-box;
+    overflow-y: auto;
+    width: 90%;
+}
+
+.history-item {
+    padding: 8px;
+    font-size: 24px;
+}
+
+.clear-history {
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(170, 170, 170);
+    border: none;
+    cursor: pointer;
+
+    width: 70%;
+    border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+    .history-panel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100vw;
+    }
+}
